@@ -1,0 +1,16 @@
+{
+  "sound": {
+    "name": "分贝",
+    "aliases": [
+      "分贝",
+      "噪声",
+      "声音"
+    ],
+    "promql": "sound_level_dba{job=\"sound-meter\"}",
+    "unit": "dB(A)（估算）",
+    "precision": 1,
+    "stale_seconds": 30,
+    "db_energy_avg": true,
+    "enabled": true
+  }
+}

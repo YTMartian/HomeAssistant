@@ -1,0 +1,18 @@
+services:
+  feishu-smart-home-assistant:
+    build: .
+    container_name: feishu-smart-home-assistant
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./config:/app/config:ro
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    mem_limit: 384m
+    # 不开放任何入站端口：飞书 WebSocket 长连接由本容器主动发起。

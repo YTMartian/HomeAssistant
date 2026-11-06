@@ -1,0 +1,192 @@
+{
+  "schema": "2.0",
+  "config": {
+    "wide_screen_mode": true
+  },
+  "header": {
+    "title": {
+      "tag": "plain_text",
+      "content": "分贝 · 最近24小时"
+    },
+    "template": "blue"
+  },
+  "body": {
+    "elements": [
+      {
+        "tag": "markdown",
+        "content": "**分贝历史趋势**（dB SPL（估算））"
+      },
+      {
+        "tag": "chart",
+        "aspect_ratio": "16:9",
+        "preview": true,
+        "color_theme": "brand",
+        "chart_spec": {
+          "type": "line",
+          "data": {
+            "values": [
+              {
+                "time": "16:53",
+                "value": 48.0
+              },
+              {
+                "time": "17:23",
+                "value": 51.0
+              },
+              {
+                "time": "17:53",
+                "value": 54.0
+              },
+              {
+                "time": "18:23",
+                "value": 48.0
+              },
+              {
+                "time": "18:53",
+                "value": 51.0
+              },
+              {
+                "time": "19:23",
+                "value": 54.0
+              },
+              {
+                "time": "19:53",
+                "value": 48.0
+              },
+              {
+                "time": "20:23",
+                "value": 51.0
+              },
+              {
+                "time": "20:53",
+                "value": 54.0
+              },
+              {
+                "time": "21:23",
+                "value": 48.0
+              },
+              {
+                "time": "21:53",
+                "value": 51.0
+              },
+              {
+                "time": "22:23",
+                "value": 54.0
+              },
+              {
+                "time": "22:53",
+                "value": 48.0
+              },
+              {
+                "time": "23:23",
+                "value": 51.0
+              },
+              {
+                "time": "23:53",
+                "value": 54.0
+              },
+              {
+                "time": "00:23",
+                "value": 48.0
+              },
+              {
+                "time": "00:53",
+                "value": 51.0
+              },
+              {
+                "time": "01:23",
+                "value": 54.0
+              },
+              {
+                "time": "01:53",
+                "value": 48.0
+              },
+              {
+                "time": "02:23",
+                "value": 51.0
+              },
+              {
+                "time": "02:53",
+                "value": 54.0
+              },
+              {
+                "time": "03:23",
+                "value": 48.0
+              },
+              {
+                "time": "03:53",
+                "value": 51.0
+              },
+              {
+                "time": "04:23",
+                "value": 54.0
+              },
+              {
+                "time": "04:53",
+                "value": 48.0
+              },
+              {
+                "time": "05:23",
+                "value": 51.0
+              },
+              {
+                "time": "05:53",
+                "value": 54.0
+              },
+              {
+                "time": "06:23",
+                "value": 48.0
+              },
+              {
+                "time": "06:53",
+                "value": 51.0
+              },
+              {
+                "time": "07:23",
+                "value": 54.0
+              },
+              {
+                "time": "07:53",
+                "value": 48.0
+              },
+              {
+                "time": "08:23",
+                "value": 51.0
+              },
+              {
+                "time": "08:53",
+                "value": 54.0
+              },
+              {
+                "time": "09:23",
+                "value": 48.0
+              },
+              {
+                "time": "09:53",
+                "value": 51.0
+              },
+              {
+                "time": "10:23",
+                "value": 54.0
+              }
+            ]
+          },
+          "xField": "time",
+          "yField": "value",
+          "point": {
+            "visible": false
+          },
+          "line": {
+            "style": {
+              "lineWidth": 2
+            }
+          }
+        }
+      },
+      {
+        "tag": "markdown",
+        "content": "数据源：Prometheus；数值为采样或降采样结果，仅供环境趋势参考。"
+      }
+    ]
+  }
+}

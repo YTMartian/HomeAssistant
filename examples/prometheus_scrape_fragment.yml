@@ -1,0 +1,6 @@
+# 只把下面的 job 追加到现有 prometheus.yml 的 scrape_configs: 下；不要覆盖已有配置
+- job_name: "sound-meter"
+  scrape_interval: 1s
+  scrape_timeout: 800ms
+  static_configs:
+    - targets: ["192.168.31.180:80"] # 替换为 ESP32-C3 的实际 IP
